@@ -1,7 +1,5 @@
 var echo = require('../dist/index.js');
 
-var options = {
-  host: 'http://example.dev',
-};
+var options = require('./config.json');
 
 echo.run(options);

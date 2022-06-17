@@ -1,6 +1,6 @@
-var echo = require('../dist/index.js');
+var echo = require('../laravel-echo/index.js');
 
-var options = require('../laravel-echo-server');
+var options = require('./config.json');
 
 echo.run(options).then(echo => {
     echo.stop();
